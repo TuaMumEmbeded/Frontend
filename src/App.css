@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'poppins', sans-serif;
+    color: #3E424E;
+    background-color: #F5F7FB;
+    margin: 0;
+}
+
+
+h1 {
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+}
+
+.row {
+    margin: 0;
+    margin-left: 2rem;
+}
+
+
+
+
+
+/* .dateHeader {
+
+
+} */
