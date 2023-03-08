@@ -12,8 +12,17 @@ export default function App(){
         <div>
             <Header />
             <Row>
-                <Col lg={6} md={1}><Patients /></Col> 
-                <Col lg={6} md={1}><Patients /></Col>
+                {test.map(patient => (
+                    <Col lg={6} md={1}><Patients 
+                        key={patient.id}
+                        firstname={patient.firstName}
+                        lastname={patient.lastName}
+                        gender={patient.gender}
+                        age={patient.age}
+                    /></Col> 
+                ))}
+                {/* <Col lg={6} md={1}><Patients /></Col> 
+                <Col lg={6} md={1}><Patients /></Col> */}
             </Row>
         </div>
     )

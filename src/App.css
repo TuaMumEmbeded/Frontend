@@ -64,6 +64,11 @@ h1 {
     margin-bottom: 1rem;
 }
 
+.emergency-square-on {
+    outline-color: rgb(217, 5, 25);
+    background-color: rgb(217, 5, 25);
+}
+
 .med-square {
     display: inline-block;
     width: 17.9rem;
@@ -122,6 +127,10 @@ h1 {
     margin: 0 0 0 0.75rem;
 }
 
+.text-on {
+    color: white;
+}
+
 .info {
     margin-bottom: 0.5rem;
     opacity: 50%;
@@ -144,6 +153,10 @@ h1 {
     left: 0.5rem
 }
 
+.circle-on {
+    background-color: white;
+}
+
 .emergency {
     font-size: 1.5rem;
     margin: 0;
@@ -155,7 +168,7 @@ h1 {
     width: 2.5rem;
 }
 
-.daily-playtime-box, .daily-playtime-card {
+.daily-playtime-box {
     background-color: #41C0B5;
     outline: 0.15rem solid #41C0B5;
 }
@@ -182,7 +195,7 @@ h1 {
     color: rgba(65, 192, 181, 1, 0.75);
 }
 
-.weekly-playtime-box, .weekly-playtime-card {
+.weekly-playtime-box {
     outline: 0.15rem solid #41C0B5;
     color: #41C0B5;
 }
@@ -195,8 +208,6 @@ h1 {
 .weekly {
     margin-bottom: 0;
 }
-
-
 
 /* .arrow-up {
     width: 4em; 
