@@ -109,16 +109,36 @@ h1 {
     background-color: rgba(255, 160, 39, 0.15);
 }
 
+.bed-on {
+    outline-color: rgba(255, 160, 39);
+    background-color: rgba(255, 160, 39);
+}
+
 .restroom-circle {
     background-color: rgba(65, 192, 181, 0.15);
+}
+
+.restroom-on {
+    outline-color: rgba(65, 192, 181);
+    background-color: rgba(65, 192, 181);
 }
 
 .hungry-circle {
     background-color: rgba(6, 107, 51, 0.15);
 }
 
+.hungry-on {
+    outline-color: rgba(6, 107, 51);
+    background-color: rgba(6, 107, 51);
+}
+
 .game-circle {
     background-color: rgba(140, 61, 136, 0.15);
+}
+
+.game-on {
+    outline-color: rgba(140, 61, 136);
+    background-color: rgba(140, 61, 136);
 }
 
 .alert-text {

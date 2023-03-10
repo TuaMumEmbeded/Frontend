@@ -12,7 +12,7 @@ export const Alert = () => {
     var isEmergency = false;
     var isBed = false;
     var isRestroom = false;
-    var isHungry = false;
+    var isHungry = true;
     var isGame = false;
     return (
         <div>
@@ -20,20 +20,20 @@ export const Alert = () => {
                 <div className={isEmergency ? "emergency-circle circle-on" : "emergency-circle"}><img src={alertPic} className="alert-pic" /></div>
                 <p className={isEmergency ? "emergency text-on" : "emergency"}>Emergency</p>
             </div>
-            <div className="small-square bed-square">
+            <div className={isBed ? "small-square bed-on" : "small-square"}>
                 <div className={isBed ? "small-circle bed-circle circle-on" : "small-circle bed-circle"}><img src={bedPic} className="small-pic" /></div>
                 <p className={isBed ? "alert-text text-on" : "alert-text"}>Bed</p>
             </div>
-            <div className="small-square restroom-square">
+            <div className={isRestroom ? "small-square restroom-on" : "small-square"}>
                 <div className={isRestroom ? "small-circle restroom-circle circle-on" : "small-circle restroom-circle"}><img src={restroomPic} className="small-pic" /></div>
                 <p className={isRestroom ? "alert-text text-on" : "alert-text"}>Restroom</p>
             </div>
-            <div className="small-square hungry-square">
+            <div className={isHungry ? "small-square hungry-on" : "small-square"}>
                 <div className={isHungry ? "small-circle hungry-circle circle-on" : "small-circle hungry-circle"}><img src={foodPic} className="small-pic" /></div>
                 <p className={isHungry ? "alert-text text-on" : "alert-text"}>Hungry</p>
             </div>
-            <div className="small-square game-square" style={{ marginRight: "0"}}>
-                <div className={isRestroom ? "small-circle game-circle circle-on" : "small-circle game-circle"}><img src={gamePic} className="small-pic" /></div>
+            <div className={isGame ? "small-square game-on" : "small-square"} style={{ marginRight: "0"}}>
+                <div className={isGame ? "small-circle game-circle circle-on" : "small-circle game-circle"}><img src={gamePic} className="small-pic" /></div>
                 <p className={isGame ? "alert-text text-on" : "alert-text"}>Game</p>
             </div>
         </div>

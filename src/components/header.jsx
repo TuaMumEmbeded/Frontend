@@ -13,7 +13,7 @@ export const Header = () => {
     return (
         
         <div className="dateHeader">
-            <h1>{day}, {m} {date}, {year}</h1>
+            <h1>{day}, {m} {date} {year}</h1>
         </div>
     )
 }
