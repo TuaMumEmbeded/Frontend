@@ -6,6 +6,7 @@ import { Alert } from "./alert.jsx"
 import { Activity } from "./activity.jsx" 
 
 export const Patients = (props) => {
+    // console.log(props.id.toString())
     return (
         <Card className="patient-card">
             <Card.Title className="patient-name">{props.firstname} {props.lastname}</Card.Title>
@@ -13,7 +14,9 @@ export const Patients = (props) => {
                 <Card.Text className="info">{props.gender}, {props.age} years old</Card.Text>
                 <div className="alert">
                     <Card.Title className="title">Alert</Card.Title>
-                    <Alert />
+                    <Alert 
+                        id={props.id.toString()}
+                    />
                 </div>
                 <div className="activity">
                     <Card.Title className="title">Activity</Card.Title>
