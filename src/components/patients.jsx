@@ -7,9 +7,12 @@ import { Activity } from "./activity.jsx"
 
 export const Patients = (props) => {
     // console.log(props.id.toString())
+    var nameTitle = props.gender.toString() === "Male" ? "Mr." : "Ms."
+    console.log(nameTitle)
+
     return (
         <Card className="patient-card">
-            <Card.Title className="patient-name">{props.firstname} {props.lastname}</Card.Title>
+            <Card.Title className="patient-name">{nameTitle} {props.firstname} {props.lastname}</Card.Title>
             <Card.Body>
                 <Card.Text className="info">{props.gender}, {props.age} years old</Card.Text>
                 <div className="alert">
@@ -18,9 +21,11 @@ export const Patients = (props) => {
                         id={props.id.toString()}
                     />
                 </div>
-                <div className="activity">
+                <div>
                     <Card.Title className="title">Activity</Card.Title>
-                    <Activity />
+                    <Activity 
+                        id={props.id.toString()}
+                    />
                 </div>
             </Card.Body>
         </Card>
