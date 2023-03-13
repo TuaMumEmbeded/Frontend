@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 
 import alertPic from "../static/images/alert (1).png"
 import foodPic from "../static/images/bowl-of-white-rice (1).png"
-import gamePic from "../static/images/game-controller.png"
+// import gamePic from "../static/images/game-controller.png"
 import bedPic from "../static/images/hotel-bed (1).png"
 import restroomPic from "../static/images/toilet.png" 
 
@@ -31,22 +31,25 @@ export const Alert = (props) => {
                 <div className={sensorData?.Emergency ? "emergency-circle circle-on" : "emergency-circle"}><img src={alertPic} className="alert-pic" /></div>
                 <p className={sensorData?.Emergency ? "emergency text-on" : "emergency"}>Emergency</p>
             </div>
-            <div className={sensorData?.Bed ? "small-square bed-on" : "small-square"}>
-                <div className={sensorData?.Bed ? "small-circle bed-circle circle-on" : "small-circle bed-circle"}><img src={bedPic} className="small-pic" /></div>
-                <p className={sensorData?.Bed ? "alert-text text-on" : "alert-text"}>Bed</p>
+            <div className="alert-2">
+                <div className={sensorData?.Bed ? "small-square bed-on" : "small-square"}>
+                    <div className={sensorData?.Bed ? "small-circle bed-circle circle-on" : "small-circle bed-circle"}><img src={bedPic} className="small-pic" /></div>
+                    <p className={sensorData?.Bed ? "alert-text text-on" : "alert-text"}>Bed</p>
+                </div>
+                <div className={sensorData?.Restroom ? "small-square restroom-on" : "small-square"}>
+                    <div className={sensorData?.Restroom ? "small-circle restroom-circle circle-on" : "small-circle restroom-circle"}><img src={restroomPic} className="small-pic" /></div>
+                    <p className={sensorData?.Restroom ? "alert-text text-on" : "alert-text"}>Restroom</p>
+                </div>
+                <div className={sensorData?.Hungry ? "small-square hungry-on" : "small-square"} style={{ marginRight: "0"}}>
+                    <div className={sensorData?.Hungry ? "small-circle hungry-circle circle-on" : "small-circle hungry-circle"}><img src={foodPic} className="small-pic" /></div>
+                    <p className={sensorData?.Hungry ? "alert-text text-on" : "alert-text"}>Hungry</p>
+                </div>
             </div>
-            <div className={sensorData?.Restroom ? "small-square restroom-on" : "small-square"}>
-                <div className={sensorData?.Restroom ? "small-circle restroom-circle circle-on" : "small-circle restroom-circle"}><img src={restroomPic} className="small-pic" /></div>
-                <p className={sensorData?.Restroom ? "alert-text text-on" : "alert-text"}>Restroom</p>
-            </div>
-            <div className={sensorData?.Hungry ? "small-square hungry-on" : "small-square"}>
-                <div className={sensorData?.Hungry ? "small-circle hungry-circle circle-on" : "small-circle hungry-circle"}><img src={foodPic} className="small-pic" /></div>
-                <p className={sensorData?.Hungry ? "alert-text text-on" : "alert-text"}>Hungry</p>
-            </div>
-            <div className={sensorData?.Game ? "small-square game-on" : "small-square"} style={{ marginRight: "0"}}>
+            
+            {/* <div className={sensorData?.Game ? "small-square game-on" : "small-square"} style={{ marginRight: "0"}}>
                 <div className={sensorData?.Game ? "small-circle game-circle circle-on" : "small-circle game-circle"}><img src={gamePic} className="small-pic" /></div>
                 <p className={sensorData?.Game ? "alert-text text-on" : "alert-text"}>Game</p>
-            </div>
+            </div> */}
         </div>
     )
 }
