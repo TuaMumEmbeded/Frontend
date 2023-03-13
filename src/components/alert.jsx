@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 import alertPic from "../static/images/alert (1).png"
 import foodPic from "../static/images/bowl-of-white-rice (1).png"
 // import gamePic from "../static/images/game-controller.png"
-import bedPic from "../static/images/hotel-bed (1).png"
+import callingPic from "../static/images/support.png"
 import restroomPic from "../static/images/toilet.png" 
 
 export const Alert = (props) => {
@@ -27,14 +27,14 @@ export const Alert = (props) => {
 
     return (
         <div>
-            <div className={sensorData?.Emergency ? "emergency-square emergency-square-on" : "emergency-square"}>
-                <div className={sensorData?.Emergency ? "emergency-circle circle-on" : "emergency-circle"}><img src={alertPic} className="alert-pic" /></div>
-                <p className={sensorData?.Emergency ? "emergency text-on" : "emergency"}>Emergency</p>
+            <div className={sensorData?.Bed ? "emergency-square emergency-square-on" : "emergency-square"}>
+                <div className={sensorData?.Bed ? "emergency-circle circle-on" : "emergency-circle"}><img src={alertPic} className="alert-pic" /></div>
+                <p className={sensorData?.Bed ? "emergency text-on" : "emergency"}>Emergency</p>
             </div>
             <div className="alert-2">
-                <div className={sensorData?.Bed ? "small-square bed-on" : "small-square"}>
-                    <div className={sensorData?.Bed ? "small-circle bed-circle circle-on" : "small-circle bed-circle"}><img src={bedPic} className="small-pic" /></div>
-                    <p className={sensorData?.Bed ? "alert-text text-on" : "alert-text"}>Bed</p>
+                <div className={sensorData?.Emergency ? "small-square bed-on" : "small-square"}>
+                    <div className={sensorData?.Emergency ? "small-circle bed-circle circle-on" : "small-circle bed-circle"}><img src={callingPic} className="small-pic" /></div>
+                    <p className={sensorData?.Emergency ? "alert-text text-on" : "alert-text"}>Calling</p>
                 </div>
                 <div className={sensorData?.Restroom ? "small-square restroom-on" : "small-square"}>
                     <div className={sensorData?.Restroom ? "small-circle restroom-circle circle-on" : "small-circle restroom-circle"}><img src={restroomPic} className="small-pic" /></div>

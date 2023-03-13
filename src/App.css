@@ -194,6 +194,8 @@ h1 {
 }
 
 .piano {
+    display: flex;
+    align-items: center;
     background-color: black;
     outline: 0.15rem solid black;
 }
@@ -300,29 +302,3 @@ span:nth-of-type(7)::after{
     margin-bottom: 0;
 }
 
-/* .arrow-up {
-    width: 4em; 
-    height: 4em;
-    overflow: hidden;
-	position: relative;
-	margin: 7em auto 0;
-	border-radius: 20%;
-	transform: translateY(50%) rotate(30deg) skewY(30deg) scaleX(.866);
-	cursor: pointer;
-	pointer-events: none;
-}
-  
-.arrow-down {
-    width: 0; 
-    height: 0; 
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 20px solid #f00;
-}
-
-.triangle {
-    fill: #41C0B5;
-    stroke: #41C0B5;
-    stroke-width: 30;
-}
- */
